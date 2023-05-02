@@ -1,0 +1,86 @@
+{
+  "film": [
+    {
+      "title": "Sweet Home",
+      "content": "The show follows a guy who moves into a new apartment complex after the death of his family. Depressed and a loner, he starts witnessing frightening things in the building from some of his odd neighbors. If you're a peek-over-the-blanket-type person when watching horror shows like I am, then I'd advise you to tune into this during the day time. ",
+      "icon": "https://imgs.search.brave.com/QuzBmLVayLmPClaVWT3HpswpNl0Jx7fOPH7b9D4x4ro/rs:fit:832:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4w/VWFoaVRGQnB5VkJB/c2VjZXJWRXlRSGFF/TyZwaWQ9QXBp",
+      "link": "https://www.youtube.com/watch?v=7rI56NmD33Y",
+      "categorieId": "1",
+      "tagId": "1",
+      "id": 2
+    },
+    {
+      "title": "All of Us Are Dead 2",
+      "content": "This heart-racing zombie thriller offers another unique spin on the drama, following a group of high school students as the zombie apocalypse comes to their school. The kids are left on their own as their classmates quickly return, and we see how they handle the survival challenge while also getting storylines of parents and politicians handling the virus outside the school. ",
+      "icon": "https://imgs.search.brave.com/Y54a2c0DkMDsBHtRgNcYfJCox7j1ywtln3E9IuOLY5k/rs:fit:1100:580:1/g:ce/aHR0cHM6Ly9jb25j/ZW50cmFkb25vdGlj/aWFzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNC9h/bGwtb2YtdXMtYXJl/LWRlYWQtc2VyaWUt/em9tYmllcy1uZXRm/bGl4LWNvcmVhLTE1/ODY4NDU3NTMuanBn",
+      "link": "https://www.youtube.com/watch?v=IN5TD4VRcSM",
+      "categorieId": "1",
+      "tagId": "3",
+      "id": 3
+    },
+    {
+      "title": "squid game",
+      "content": "This edge-of-your-seat Korean thriller on Netflix(opens in new tab) is definitely worth a look. In the viral hit, a group of characters(opens in new tab) in serious debt sign up to play a series of children's games for a chance at 45.6 billion won (about $38 million). The catch? If the players loose at Tug of War or Red Light, Green Light, they die",
+      "icon": "https://imgs.search.brave.com/k-D3kUPNGwfIh6seO3jHNTIexDfQGDanSoPiZGSySXE/rs:fit:1200:1151:1/g:ce/aHR0cHM6Ly93d3cu/Zml6LXguY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzEw/L3NxdWlkLWdhbWUt/d2FsbHBhcGVyLmpw/Zw",
+      "link": "https://www.youtube.com/watch?v=oqxAJKy0ii4",
+      "categorieId": "1",
+      "tagId": "2",
+      "id": 1
+    },
+    {
+      "title": "Business Proposal",
+      "content": "This 2022 rom-com drama has become the year's biggest hit so far thanks to its hilarious romances (and a super-popular kissing clip). Shin Ha-ri (I.O.I. and The Uncanny Counter's Kim Se-jeong) is a food researcher at a company that just welcomed a new president, Kang Tae-moo (Ahn Hyo-seop). When her wealthy BFF (played by Seol In-ah) asks her to go on a blind date for her and ruin it, the date turns out to be Tae-moo.",
+      "icon": "https://imgs.search.brave.com/mSFWN4DxA3E-j_0-jxKcPB1KEtJlxVzA6kR3gh3skhY/rs:fit:900:600:1/g:ce/aHR0cHM6Ly82LnZp/a2kuaW8vaW1hZ2Uv/OGY3MDUwNjdkZjAy/NGU0YWEwZGQ3NGQ4/NzcxMjg0YzgvZHVt/bXkuanBlZz9zPTkw/MHg2MDAmZT10",
+      "link": "https://www.youtube.com/watch?v=H8lfjfKGr00",
+      "categorieId": "2",
+      "tagId": "3",
+      "id": 4
+    },
+    {
+      "title": "'Weightlifting Fairy Kim Bok-joo'",
+      "content": "This drama has one of the most likable protagonists and the cutest friends-to-lovers story. Kim Bok-joo (Lee Sung-kyung), a collegiate weightlifter training for the Olympics, meets Jung Joon-hyung (Nam Joo-hyuk) a swimmer at the same school recovering from a psychological problem. The two athletes start out as reluctant friends, but watching them fall in love makes for some hilarious, heart-warming moments.",
+      "icon": "https://imgs.search.brave.com/fOm0Z8CvhhrvOU9GioU9L06M7jvGHXS2T-6p9Wp7T7s/rs:fit:1080:650:1/g:ce/aHR0cHM6Ly92aWVu/bmFub3JlZW4uZmls/ZXMud29yZHByZXNz/LmNvbS8yMDE3LzAz/L3dlaWdodGxpZnRp/bmctZmFpcnkta2lt/LWJvay1qb28uanBn/P3c9MTA4MA",
+      "link": "https://www.youtube.com/watch?v=6t5dLenA85Y",
+      "categorieId": "2",
+      "tagId": "3",
+      "id": 5
+    },
+    {
+      "title": "Hotel de Luna",
+      "content": "The Hotel Del Luna is a refuge for the dead, a middle ground that helps souls pass into the afterlife. All souls pass on after dealing with their unfinished business in life, except Man-wol (IU), the owner who has been cursed to run the hotel for over a millennium, as penance for her sins. The hotel also needs a human manager to help it run; the next fated human is Koo Chan-sung (Yeo Jin-goo), a Harvard grad who discovers that he can see ghosts. As they work together, Chan-sung begins to unravel the secrets of Man-wol's past",
+      "icon": "https://imgs.search.brave.com/sxDCm8U5Y0EYrbRUzoQirf8bDnCB6j2bgFT9shsxwiE/rs:fit:900:536:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lmtv/cnNlcmllcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDYvaG90ZWwtZGVs/LWx1bmEtdHZuLmpw/Zz9maXQ9OTAwJTJD/NTM2JnNzbD0x",
+      "link": "https://youtu.be/lJ3_1v8sB48",
+      "categorieId": "3",
+      "tagId": "3",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "name": "thriller",
+      "id": 1
+    },
+    {
+      "name": "romance",
+      "id": 2
+    },
+    {
+      "name": "drama",
+      "id": 3
+    }
+  ],
+  "tags": [
+    {
+      "name": "zombie",
+      "id": 1
+    },
+    {
+      "name": "apocalypse",
+      "id": 2
+    },
+    {
+      "name": "romcom",
+      "id": 3
+    }
+  ]
+}

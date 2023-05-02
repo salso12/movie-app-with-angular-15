@@ -1,0 +1,168 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">NextWatch</a>
+    <div class="collapse navbar-collapse" id="navbarColor01" style="display: contents!important;font-size: larger;">
+      <ul class="navbar-nav">
+        <li>
+          <div class="col"><input name="search" [(ngModel)]="searchTerm" class="form-control me-sm-2" type="search" placeholder="Search"></div>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movie </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TvShow</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" name="nav" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">genre</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Drama</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">NextWatch</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TvShow</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Drama</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"> Horror</a>
+          </div>
+        </li>
+        <li ><form class="d-flex mx-5" style="margin-left: 50rem!important;width: 359px;">
+          <input name="search" [(ngModel)]="searchTerm" class="form-control me-sm-2" type="search" placeholder="Search">
+        </form></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row my-4">
+    <div class="col-6 mx-auto " *ngIf="showForm">
+      <form >
+        <fieldset>
+          <div class="form-group my-2 ">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input name ="title" class="form-control" id="Title" placeholder="Enter the title" [(ngModel)]="newFilm.title">
+          </div>
+          <div class="form-group my-2 ">
+            <label for="exampleInputEmail1" class="form-label">Poster</label>
+    <input name="myposter" type="text" class="form-control" id="poster" placeholder="Enter the link of the poster" [(ngModel)]="newFilm.icon">
+          </div>
+          <div class="form-group my-2 ">
+            <label for="exampleInputEmail1" class="form-label">link</label>
+            <input name ="mytitle"type="Title" class="form-control" id="link" placeholder="Enter the link of the trailer" [(ngModel)]="newFilm.link">
+          </div>
+          <div class="form-group my-2">
+            <label for="exampleInputPassword1" class="form-label">Content</label>
+            <textarea name="mycontent" type="password" style="width: -webkit-fill-available;" class="form-control" id="Content" placeholder="describe"rows="8" [(ngModel)]="newFilm.content"></textarea>
+          </div>
+          </fieldset>
+          <button type="button" class="btn btn-primary" style="width: -webkit-fill-available" *ngIf="!editable" (click)="addFilm()"><i class="fa fa-paper-plane" aria-hidden="true"  ></i> submit</button>
+          <button type="button" class="btn btn-danger" style="width: -webkit-fill-available" *ngIf="editable" (click)="updateFilm()"><i class="fa fa-paper-plane" aria-hidden="true"  ></i> save </button>
+          </form>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-10"><input name="search" [(ngModel)]="searchTerm" class="form-control me-sm-2" type="search" placeholder="Search"></div>
+    <div class="col-2"><button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button></div>
+  </div> -->
+  <div class="row" >
+    <div class="col-6 mt-5"><h1>List of Movies</h1></div>
+      <div class="col-6 mt-5 " align="right">
+        <button type="button" class="btn btn-light my-3 mx-6" style="width: 80px;" (click)="viewMode(true)"><i class="fa fa-table" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-light my-3 mx-6" style="width: 80px;" (click)="viewMode(false)"><i class="fa fa-th-large" aria-hidden="true"></i>
+        </button>
+      </div>
+
+
+
+    </div>
+    <div class="row ">
+    <div class="col mt-12" *ngIf="list">
+      <div class="bttt">
+        <button type="button" align="right" class="btn btn-primary mt-3" (click)="toggleFormVisibility()"><i class="fa fa-plus" aria-hidden="true"></i>  Add a new film </button>
+      </div>
+
+      <table class="table table-sriped table-dark mt-3" >
+
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">content</th>
+            <th scope="col">link</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr class="table-dark" *ngFor="let x of Listfilms | search: searchTerm">
+          <th scope="row">{{ x.id}}</th>
+          <td>{{ x.title}}</td>
+          <td>
+            {{ x.content}}</td>
+          <td>{{ x.link }}</td>
+          <td class="text-center my-3">
+            <button type="button" class="btn btn-warning mt-2" (click)="deleteFilm(x.id)"><i class="fa fa-trash" aria-hidden="true" ></i></button>
+            <button type="button" class="btn btn-danger mt-2" (click)="editFilm(x)"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div class="row" *ngIf="!list">
+ <div class="col-4 mt-5 text text-center card-grid" *ngFor="let x of Listfilms | search: searchTerm">
+      <div class="card text-white bg-dark" >
+
+          <img src="{{x.icon}}" class="card-img-top" alt="{{x.title}}">
+
+
+        <div class="card-body">
+          <h4 class="card-title mt-3" >{{x.title}}</h4>
+          <p class="card-text mt-4">{{x.content}}</p>
+          <a href="{{x.link}}" class="btn btn-primary mt-4">Watch Now</a>
+          <!-- <td class="text-center my-4" align="right" >
+            <button type="button" style="margin-left: 240px;" class="btn btn-warning" (click)="deleteFilm(x.id)"><i class="fa fa-trash" aria-hidden="true" ></i></button>
+            <button type="button" class="btn btn-danger mx-2" (click)="editFilm(x)"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button>
+          </td> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
